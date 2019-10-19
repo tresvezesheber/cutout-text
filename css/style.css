@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:700&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 100vh;
+  background: url("../images/bg-street.jpg") center no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  flex: 1;
+  margin: 20px;
+  padding: 40px 20px;
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  mix-blend-mode: multiply;
+}
+
+h1 span:nth-child(1) {
+  font-size: 1.5em;
+}
+
+h1 span:nth-child(3) {
+  font-size: 2em;
+}
+
+@media screen and (min-width: 800px)
+{
+  h1 span:nth-child(1) {
+    font-size: 2.5em;
+  }
+  
+  h1 span:nth-child(3) {
+    font-size: 4em;
+  }
+}
+
+h1:nth-child(2) {
+    background: #fff;
+    color: #000;
+    mix-blend-mode: screen;
+}
